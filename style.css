@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'NanumGothic';
+  src: url(NanumFont_TTF_ALL/NanumGothic.ttf) format('truetype');
+}
+
+a {
+  color: black;
+  font-family: NanumGothic;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+h1 {
+  background-color: #eee;
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 2px solid gray;
+  margin: 0;
+  padding: 10px;
+}
+
+ol {
+  background-color: #ECF6CE;
+  border-right: 2px solid gray;
+  width: 90px;
+  margin: 0;
+  padding: 20px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  background-color: #F6CEE3;
+  background-clip: content-box;
+}
+
+@media(max-width:800px) {
+  #grid {
+    background-color: white;
+    display: block;
+  }
+
+  ol {
+    background-color: white;
+    border-right: none;
+  }
+
+  h1 {
+    border-bottom: none;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: NanumGothic;
+}
